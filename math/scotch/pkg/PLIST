@@ -1,0 +1,73 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/acpl
+@bin bin/amk_ccc
+@bin bin/amk_fft2
+@bin bin/amk_grf
+@bin bin/amk_hy
+@bin bin/amk_m2
+@bin bin/amk_p2
+@bin bin/atst
+@bin bin/dggath
+@bin bin/dgmap
+@bin bin/dgord
+@bin bin/dgpart
+@bin bin/dgscat
+@bin bin/dgtst
+@bin bin/gbase
+@bin bin/gcv
+@bin bin/gdump
+@bin bin/gmap
+@bin bin/gmk_hy
+@bin bin/gmk_m2
+@bin bin/gmk_m3
+@bin bin/gmk_msh
+@bin bin/gmk_ub2
+@bin bin/gmtst
+@bin bin/gord
+@bin bin/gotst
+@bin bin/gout
+@bin bin/gpart
+@bin bin/gscat
+@bin bin/gtst
+@bin bin/mcv
+@bin bin/mmk_m2
+@bin bin/mmk_m3
+@bin bin/mord
+@bin bin/mtst
+include/esmumps.h
+include/ptscotch.h
+include/ptscotchf.h
+include/scotch.h
+include/scotchf.h
+@lib lib/libesmumps.so.${LIBesmumps_VERSION}
+@lib lib/libptscotch.so.${LIBptscotch_VERSION}
+@lib lib/libptscotcherr.so.${LIBptscotcherr_VERSION}
+@lib lib/libptscotcherrexit.so.${LIBptscotcherrexit_VERSION}
+@lib lib/libptscotchparmetis.so.${LIBptscotchparmetis_VERSION}
+@lib lib/libscotch.so.${LIBscotch_VERSION}
+@lib lib/libscotcherr.so.${LIBscotcherr_VERSION}
+@lib lib/libscotcherrexit.so.${LIBscotcherrexit_VERSION}
+@lib lib/libscotchmetis.so.${LIBscotchmetis_VERSION}
+@man man/man1/acpl.1
+@man man/man1/amk_ccc.1
+@man man/man1/amk_grf.1
+@man man/man1/atst.1
+@man man/man1/dgmap.1
+@man man/man1/dgord.1
+@man man/man1/dgscat.1
+@man man/man1/dgtst.1
+@man man/man1/gbase.1
+@man man/man1/gcv.1
+@man man/man1/gdump.1
+@man man/man1/gmap.1
+@man man/man1/gmk_hy.1
+@man man/man1/gmk_msh.1
+@man man/man1/gmtst.1
+@man man/man1/gord.1
+@man man/man1/gotst.1
+@man man/man1/gout.1
+@man man/man1/gtst.1
+@man man/man1/mcv.1
+@man man/man1/mmk_m2.1
+@man man/man1/mord.1
+@man man/man1/mtst.1

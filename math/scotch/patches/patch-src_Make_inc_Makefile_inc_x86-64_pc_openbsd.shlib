@@ -1,0 +1,27 @@
+$OpenBSD$
+
+Index: src/Make.inc/Makefile.inc.x86-64_pc_openbsd.shlib
+--- src/Make.inc/Makefile.inc.x86-64_pc_openbsd.shlib.orig
++++ src/Make.inc/Makefile.inc.x86-64_pc_openbsd.shlib
+@@ -0,0 +1,21 @@
++EXE		=
++LIB		= .so
++OBJ		= .o
++
++MAKE		?= gmake
++AR		?= egcc
++ARFLAGS	= ${ARFLAGS_} -shared -o
++CAT		= cat
++CCS		?= egcc
++CCP		?= mpicc
++CCD		?= egcc
++CFLAGS		+= -I${LOCALBASE}/include -fPIC -DCOMMON_FILE_COMPRESS_GZ -DCOMMON_PTHREAD -DCOMMON_RANDOM_FIXED_SEED -DSCOTCH_RENAME -DSCOTCH_RENAME_PARSER -DSCOTCH_PTHREAD -Drestrict=__restrict -DIDXSIZE64
++CLIBFLAGS	=
++LDFLAGS		?= -lz -lm -lpthread
++CP		= cp
++LEX		= flex -Pscotchyy -olex.yy.c
++LN		= ln
++MKDIR		= mkdir -p
++MV		= mv
++RANLIB		= ranlib
++YACC		= bison -pscotchyy -y -b y

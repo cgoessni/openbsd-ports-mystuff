@@ -1,0 +1,16 @@
+$OpenBSD$
+
+Index: src/Makefile
+--- src/Makefile.orig
++++ src/Makefile
+@@ -132,8 +132,8 @@ install				:	required	$(bindir)	$(includedir)	$(libdir
+ 					-$(CP) -f ../bin/d[agm]*$(EXE) $(bindir)
+ 					-$(CP) -f ../include/*esmumps*.h $(includedir)
+ 					-$(CP) -f ../include/*scotch*.h $(includedir)
+-					-$(CP) -f ../lib/*esmumps*$(LIB) $(libdir)
+-					-$(CP) -f ../lib/*scotch*$(LIB) $(libdir)
++					-$(CP) -f ../lib/*esmumps*$(LIB)* $(libdir)
++					-$(CP) -f ../lib/*scotch*$(LIB)* $(libdir)
+ 					-$(CP) -f ../man/man1/*[.]1 $(mandir)/man1
+ 
+ installstub			:	required	$(includedir)
