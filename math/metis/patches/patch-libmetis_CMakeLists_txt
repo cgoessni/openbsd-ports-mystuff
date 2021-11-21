@@ -1,0 +1,16 @@
+$OpenBSD$
+
+ld: error: undefined symbol: backtrace
+
+Index: libmetis/CMakeLists.txt
+--- libmetis/CMakeLists.txt.orig
++++ libmetis/CMakeLists.txt
+@@ -5,7 +5,7 @@ file(GLOB metis_sources *.c)
+ # Build libmetis.
+ add_library(metis ${METIS_LIBRARY_TYPE} ${GKlib_sources} ${metis_sources})
+ if(UNIX)
+-  target_link_libraries(metis m)
++  target_link_libraries(metis m execinfo)
+ endif()
+ 
+ if(METIS_INSTALL)

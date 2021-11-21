@@ -1,0 +1,9 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/cmpfillin
+@bin bin/gpmetis
+@bin bin/graphchk
+@bin bin/m2gmetis
+@bin bin/mpmetis
+@bin bin/ndmetis
+include/metis.h
+@lib lib/libmetis.so.${LIBmetis_VERSION}
