@@ -1,0 +1,12 @@
+$OpenBSD$
+
+Index: src/parallel/decompose/ptscotchDecomp/Make/options
+--- src/parallel/decompose/ptscotchDecomp/Make/options.orig
++++ src/parallel/decompose/ptscotchDecomp/Make/options
+@@ -13,5 +13,4 @@ LIB_LIBS = \
+     -L$(FOAM_EXT_LIBBIN)/$(FOAM_MPI) \
+     -lptscotch \
+     -lptscotcherrexit \
+-    -lscotch \
+-    -lrt
++    -lscotch

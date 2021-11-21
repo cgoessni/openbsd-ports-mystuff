@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/heatTransfer/thermoFoam/Make/options
+--- applications/solvers/heatTransfer/thermoFoam/Make/options.orig
++++ applications/solvers/heatTransfer/thermoFoam/Make/options
+@@ -15,6 +15,7 @@ EXE_LIBS = \
+     -lfvModels \
+     -lfvConstraints \
+     -lfluidThermophysicalModels \
++    -lsolidThermo \
+     -lspecie \
+     -lmomentumTransportModels \
+     -lcompressibleMomentumTransportModels \

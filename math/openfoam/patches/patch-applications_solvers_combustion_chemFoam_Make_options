@@ -1,0 +1,12 @@
+$OpenBSD$
+
+Index: applications/solvers/combustion/chemFoam/Make/options
+--- applications/solvers/combustion/chemFoam/Make/options.orig
++++ applications/solvers/combustion/chemFoam/Make/options
+@@ -11,4 +11,6 @@ EXE_INC = \
+ EXE_LIBS = \
+     -lchemistryModel \
+     -lfiniteVolume \
++    -lfluidThermophysicalModels \
++    -lreactionThermophysicalModels \
+     -lmeshTools

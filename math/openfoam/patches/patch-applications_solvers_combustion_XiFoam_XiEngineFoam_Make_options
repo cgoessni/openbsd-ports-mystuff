@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/combustion/XiFoam/XiEngineFoam/Make/options
+--- applications/solvers/combustion/XiFoam/XiEngineFoam/Make/options.orig
++++ applications/solvers/combustion/XiFoam/XiEngineFoam/Make/options
+@@ -24,6 +24,7 @@ EXE_LIBS = \
+     -lcompressibleMomentumTransportModels \
+     -lthermophysicalTransportModels \
+     -lfluidThermophysicalModels \
++    -lsolidThermo \
+     -lreactionThermophysicalModels \
+     -lspecie \
+     -llaminarFlameSpeedModels

@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: applications/utilities/thermophysical/chemkinToFoam/Make/options
+--- applications/utilities/thermophysical/chemkinToFoam/Make/options.orig
++++ applications/utilities/thermophysical/chemkinToFoam/Make/options
+@@ -4,4 +4,5 @@ EXE_INC = \
+     -I$(LIB_SRC)/thermophysicalModels/reactionThermo/lnInclude
+ 
+ EXE_LIBS = \
++    -lspecie \
+     -lchemistryModel

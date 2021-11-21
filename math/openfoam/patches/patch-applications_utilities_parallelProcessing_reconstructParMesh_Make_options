@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/utilities/parallelProcessing/reconstructParMesh/Make/options
+--- applications/utilities/parallelProcessing/reconstructParMesh/Make/options.orig
++++ applications/utilities/parallelProcessing/reconstructParMesh/Make/options
+@@ -5,6 +5,7 @@ EXE_INC = \
+     -I$(LIB_SRC)/regionModels/regionModel/lnInclude
+ 
+ EXE_LIBS = \
++    -lfiniteVolume \
+     -ldynamicMesh \
+     -lmeshTools \
+     -lregionModels

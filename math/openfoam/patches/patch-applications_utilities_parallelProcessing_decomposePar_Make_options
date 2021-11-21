@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: applications/utilities/parallelProcessing/decomposePar/Make/options
+--- applications/utilities/parallelProcessing/decomposePar/Make/options.orig
++++ applications/utilities/parallelProcessing/decomposePar/Make/options
+@@ -8,6 +8,8 @@ EXE_INC = \
+     -I$(LIB_SRC)/regionModels/regionModel/lnInclude
+ 
+ EXE_LIBS = \
++    -lfiniteVolume \
++    -lmeshTools \
+     -ldynamicMesh \
+     -ldecompose \
+     -lgenericPatchFields \

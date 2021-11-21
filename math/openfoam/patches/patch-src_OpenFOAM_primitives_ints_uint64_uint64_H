@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: src/OpenFOAM/primitives/ints/uint64/uint64.H
+--- src/OpenFOAM/primitives/ints/uint64/uint64.H.orig
++++ src/OpenFOAM/primitives/ints/uint64/uint64.H
+@@ -67,6 +67,7 @@ uint64_t readUint64(Istream&);
+ bool read(const char*, uint64_t&);
+ Istream& operator>>(Istream&, uint64_t&);
+ Ostream& operator<<(Ostream&, const uint64_t);
++Ostream& operator<<(Ostream&, const unsigned long);
+ 
+ //- Template specialisation for pTraits<uint64_t>
+ template<>

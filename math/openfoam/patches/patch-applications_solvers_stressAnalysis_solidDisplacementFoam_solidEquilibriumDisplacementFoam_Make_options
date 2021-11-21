@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/stressAnalysis/solidDisplacementFoam/solidEquilibriumDisplacementFoam/Make/options
+--- applications/solvers/stressAnalysis/solidDisplacementFoam/solidEquilibriumDisplacementFoam/Make/options.orig
++++ applications/solvers/stressAnalysis/solidDisplacementFoam/solidEquilibriumDisplacementFoam/Make/options
+@@ -11,6 +11,7 @@ EXE_INC = \
+ 
+ EXE_LIBS = \
+     -lfiniteVolume \
++    -lfluidThermophysicalModels \
+     -lsolidThermo \
+     -lsolidDisplacementThermo \
+     -lmeshTools

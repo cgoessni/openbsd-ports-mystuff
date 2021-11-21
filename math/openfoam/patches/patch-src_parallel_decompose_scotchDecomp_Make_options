@@ -1,0 +1,12 @@
+$OpenBSD$
+
+Index: src/parallel/decompose/scotchDecomp/Make/options
+--- src/parallel/decompose/scotchDecomp/Make/options.orig
++++ src/parallel/decompose/scotchDecomp/Make/options
+@@ -13,5 +13,4 @@ LIB_LIBS = \
+     -L$(SCOTCH_ARCH_PATH)/lib \
+     -L$(FOAM_EXT_LIBBIN) \
+     -lscotch \
+-    -lscotcherrexit \
+-    -lrt
++    -lscotcherrexit

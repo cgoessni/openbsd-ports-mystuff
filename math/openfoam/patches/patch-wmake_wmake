@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: wmake/wmake
+--- wmake/wmake.orig
++++ wmake/wmake
+@@ -106,7 +106,7 @@ USAGE
+ 
+ 
+ # Default make is the "make" in the path
+-make="make"
++make="gmake"
+ 
+ 
+ #------------------------------------------------------------------------------

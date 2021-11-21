@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/heatTransfer/buoyantSimpleFoam/Make/options
+--- applications/solvers/heatTransfer/buoyantSimpleFoam/Make/options.orig
++++ applications/solvers/heatTransfer/buoyantSimpleFoam/Make/options
+@@ -17,6 +17,7 @@ EXE_LIBS = \
+     -lmeshTools \
+     -lthermophysicalTransportModels \
+     -lfluidThermophysicalModels \
++    -lsolidThermo \
+     -lspecie \
+     -lmomentumTransportModels \
+     -lcompressibleMomentumTransportModels \

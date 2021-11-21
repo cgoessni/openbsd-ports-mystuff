@@ -1,0 +1,12 @@
+$OpenBSD$
+
+Index: applications/utilities/parallelProcessing/redistributePar/Make/options
+--- applications/utilities/parallelProcessing/redistributePar/Make/options.orig
++++ applications/utilities/parallelProcessing/redistributePar/Make/options
+@@ -9,5 +9,6 @@ EXE_LIBS = \
+     -lgenericPatchFields \
+     -ldecompositionMethods \
+     -L$(FOAM_LIBBIN)/dummy -lscotchDecomp -lptscotchDecomp \
++    -lmpi \
+     -lmeshTools \
+     -ldynamicMesh

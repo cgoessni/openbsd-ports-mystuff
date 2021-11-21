@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/multiphase/twoLiquidMixingFoam/Make/options
+--- applications/solvers/multiphase/twoLiquidMixingFoam/Make/options.orig
++++ applications/solvers/multiphase/twoLiquidMixingFoam/Make/options
+@@ -11,6 +11,7 @@ EXE_INC = \
+ 
+ EXE_LIBS = \
+     -lincompressibleTwoPhaseMixture \
++    -ltransportModels \
+     -lmomentumTransportModels \
+     -lincompressibleMomentumTransportModels \
+     -lfiniteVolume \

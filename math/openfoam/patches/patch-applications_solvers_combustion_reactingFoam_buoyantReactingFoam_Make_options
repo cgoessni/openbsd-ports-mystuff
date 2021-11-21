@@ -1,0 +1,21 @@
+$OpenBSD$
+
+Index: applications/solvers/combustion/reactingFoam/buoyantReactingFoam/Make/options
+--- applications/solvers/combustion/reactingFoam/buoyantReactingFoam/Make/options.orig
++++ applications/solvers/combustion/reactingFoam/buoyantReactingFoam/Make/options
+@@ -19,6 +19,7 @@ EXE_INC = \
+     -I$(LIB_SRC)/sampling/lnInclude
+ 
+ EXE_LIBS = \
++    -ltransportModels \
+     -lmomentumTransportModels \
+     -lcompressibleMomentumTransportModels \
+     -lthermophysicalTransportModels \
+@@ -26,6 +27,7 @@ EXE_LIBS = \
+     -lreactionThermophysicalModels \
+     -lspecie \
+     -lfluidThermophysicalModels \
++    -lsolidThermo \
+     -lchemistryModel \
+     -lODE \
+     -lcombustionModels \

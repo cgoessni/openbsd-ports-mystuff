@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/OpenFOAM/primitives/strings/word/wordIOList.C
+--- src/OpenFOAM/primitives/strings/word/wordIOList.C.orig
++++ src/OpenFOAM/primitives/strings/word/wordIOList.C
+@@ -53,7 +53,7 @@ void Foam::printTable
+     {
+         forAll(wll, i)
+         {
+-            columnWidth[j] = max(columnWidth[j], wll[i][j].size());
++            columnWidth[j] = max(static_cast<uint64_t>(columnWidth[j]), static_cast<uint64_t>(wll[i][j].size()));
+         }
+     }
+ 

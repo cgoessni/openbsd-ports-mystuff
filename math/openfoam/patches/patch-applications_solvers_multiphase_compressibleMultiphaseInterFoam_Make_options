@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/multiphase/compressibleMultiphaseInterFoam/Make/options
+--- applications/solvers/multiphase/compressibleMultiphaseInterFoam/Make/options.orig
++++ applications/solvers/multiphase/compressibleMultiphaseInterFoam/Make/options
+@@ -16,6 +16,7 @@ EXE_LIBS = \
+     -lfluidThermophysicalModels \
+     -lspecie \
+     -linterfaceProperties \
++    -ltransportModels \
+     -lmomentumTransportModels \
+     -lcompressibleMomentumTransportModels \
+     -lfiniteVolume \

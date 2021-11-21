@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: Allwmake
+--- Allwmake.orig
++++ Allwmake
+@@ -19,7 +19,7 @@ wmakeCheckPwd "$WM_PROJECT_DIR" || {
+ }
+ 
+ # Compile wmake support applications
+-(cd wmake/src && make)
++(cd wmake/src && gmake)
+ 
+ # Compile ThirdParty libraries and applications
+ if [ -d "$WM_THIRD_PARTY_DIR" ]

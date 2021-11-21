@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: applications/utilities/postProcessing/dataConversion/foamToEnsight/Make/options
+--- applications/utilities/postProcessing/dataConversion/foamToEnsight/Make/options.orig
++++ applications/utilities/postProcessing/dataConversion/foamToEnsight/Make/options
+@@ -6,6 +6,8 @@ EXE_INC = \
+     -I$(LIB_SRC)/lagrangian/basic/lnInclude
+ 
+ EXE_LIBS = \
++    -lfiniteVolume \
++    -lmeshTools \
+     -ldynamicMesh \
+     -lsampling \
+     -lgenericPatchFields \

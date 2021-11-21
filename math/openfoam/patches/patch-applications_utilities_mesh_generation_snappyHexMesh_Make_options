@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/utilities/mesh/generation/snappyHexMesh/Make/options
+--- applications/utilities/mesh/generation/snappyHexMesh/Make/options.orig
++++ applications/utilities/mesh/generation/snappyHexMesh/Make/options
+@@ -12,6 +12,7 @@ EXE_LIBS = \
+     -lfiniteVolume \
+     -ldecompositionMethods \
+     -L$(FOAM_LIBBIN)/dummy -lscotchDecomp -lptscotchDecomp \
++    -L/usr/local/lib -lmpi \
+     -lmeshTools \
+     -lsurfMesh \
+     -lfileFormats \

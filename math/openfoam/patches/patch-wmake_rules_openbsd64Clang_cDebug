@@ -1,0 +1,8 @@
+$OpenBSD$
+
+Index: wmake/rules/openbsd64Clang/cDebug
+--- wmake/rules/openbsd64Clang/cDebug.orig
++++ wmake/rules/openbsd64Clang/cDebug
+@@ -0,0 +1,2 @@
++cDBUG       = -g -DFULLDEBUG
++cOPT        = -O0

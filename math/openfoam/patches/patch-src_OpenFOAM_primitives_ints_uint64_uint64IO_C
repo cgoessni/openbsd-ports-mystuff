@@ -1,0 +1,18 @@
+$OpenBSD$
+
+Index: src/OpenFOAM/primitives/ints/uint64/uint64IO.C
+--- src/OpenFOAM/primitives/ints/uint64/uint64IO.C.orig
++++ src/OpenFOAM/primitives/ints/uint64/uint64IO.C
+@@ -97,4 +97,12 @@ Foam::Ostream& Foam::operator<<(Ostream& os, const uin
+ }
+ 
+ 
++Foam::Ostream& Foam::operator<<(Ostream& os, const unsigned long i)
++{
++    os.write(label(i));
++    os.check("Ostream& operator<<(Ostream&, const unsigned long)");
++    return os;
++}
++
++
+ // ************************************************************************* //

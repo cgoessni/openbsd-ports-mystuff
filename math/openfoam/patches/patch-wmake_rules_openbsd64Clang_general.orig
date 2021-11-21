@@ -1,0 +1,12 @@
+$OpenBSD$
+
+Index: wmake/rules/openbsd64Clang/general
+--- wmake/rules/openbsd64Clang/general.orig
++++ wmake/rules/openbsd64Clang/general
+@@ -0,0 +1,6 @@
++PROJECT_LIBS = -l$(WM_PROJECT)
++
++include $(GENERAL_RULES)/standard
++
++include $(DEFAULT_RULES)/c
++include $(DEFAULT_RULES)/c++

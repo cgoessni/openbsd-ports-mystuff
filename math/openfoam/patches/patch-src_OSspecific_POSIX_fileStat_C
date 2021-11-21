@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/OSspecific/POSIX/fileStat.C
+--- src/OSspecific/POSIX/fileStat.C.orig
++++ src/OSspecific/POSIX/fileStat.C
+@@ -29,7 +29,7 @@ License
+ 
+ #include <signal.h>
+ #include <unistd.h>
+-#include <sys/sysmacros.h>
++// #include <sys/sysmacros.h>
+ 
+ // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
+ 

@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/compressible/rhoPimpleFoam/Make/options
+--- applications/solvers/compressible/rhoPimpleFoam/Make/options.orig
++++ applications/solvers/compressible/rhoPimpleFoam/Make/options
+@@ -16,6 +16,7 @@ EXE_LIBS = \
+     -lmomentumTransportModels \
+     -lcompressibleMomentumTransportModels \
+     -lthermophysicalTransportModels \
++    -lsolidThermo \
+     -lfiniteVolume \
+     -ldynamicFvMesh \
+     -ltopoChangerFvMesh \

@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: src/OSspecific/POSIX/clockTime/clockTime.H
+--- src/OSspecific/POSIX/clockTime/clockTime.H.orig
++++ src/OSspecific/POSIX/clockTime/clockTime.H
+@@ -36,6 +36,7 @@ SourceFiles
+ #ifndef clockTime_H
+ #define clockTime_H
+ 
++#include <sys/time.h>
+ #include <sys/types.h>
+ 
+ // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

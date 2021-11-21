@@ -1,0 +1,8 @@
+$OpenBSD$
+
+Index: wmake/rules/openbsd64Clang/c++Prof
+--- wmake/rules/openbsd64Clang/c++Prof.orig
++++ wmake/rules/openbsd64Clang/c++Prof
+@@ -0,0 +1,2 @@
++c++DBUG    = -pg
++c++OPT     = -O2

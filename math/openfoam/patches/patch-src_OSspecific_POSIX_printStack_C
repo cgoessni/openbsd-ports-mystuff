@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/OSspecific/POSIX/printStack.C
+--- src/OSspecific/POSIX/printStack.C.orig
++++ src/OSspecific/POSIX/printStack.C
+@@ -84,7 +84,7 @@ string pOpen(const string &cmd, label line=0)
+ inline word addressToWord(const uintptr_t addr)
+ {
+     OStringStream nStream;
+-    nStream << "0x" << hex << addr;
++    nStream << "0x" << hex << static_cast<const char>(addr);
+     return nStream.str();
+ }
+ 

@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/combustion/reactingFoam/engineFoam/Make/options
+--- applications/solvers/combustion/reactingFoam/engineFoam/Make/options.orig
++++ applications/solvers/combustion/reactingFoam/engineFoam/Make/options
+@@ -33,6 +33,7 @@ EXE_LIBS = \
+     -lfluidReactionThermophysicalTransportModels \
+     -lspecie \
+     -lfluidThermophysicalModels \
++    -lsolidThermo \
+     -lreactionThermophysicalModels \
+     -lchemistryModel \
+     -lODE \

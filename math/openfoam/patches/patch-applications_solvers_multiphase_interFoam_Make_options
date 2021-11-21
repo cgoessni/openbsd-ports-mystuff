@@ -1,0 +1,19 @@
+$OpenBSD$
+
+Index: applications/solvers/multiphase/interFoam/Make/options
+--- applications/solvers/multiphase/interFoam/Make/options.orig
++++ applications/solvers/multiphase/interFoam/Make/options
+@@ -13,10 +13,13 @@ EXE_INC = \
+     -I$(LIB_SRC)/sampling/lnInclude
+ 
+ EXE_LIBS = \
++    -lincompressibleTwoPhaseMixture \
+     -limmiscibleIncompressibleTwoPhaseMixture \
+     -ltwoPhaseChangeModels \
++    -ltransportModels \
+     -lmomentumTransportModels \
+     -lincompressibleMomentumTransportModels \
++    -linterfaceProperties \
+     -lfiniteVolume \
+     -ldynamicFvMesh \
+     -ltopoChangerFvMesh \

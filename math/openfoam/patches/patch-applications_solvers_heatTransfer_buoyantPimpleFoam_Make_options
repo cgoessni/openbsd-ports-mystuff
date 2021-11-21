@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/solvers/heatTransfer/buoyantPimpleFoam/Make/options
+--- applications/solvers/heatTransfer/buoyantPimpleFoam/Make/options.orig
++++ applications/solvers/heatTransfer/buoyantPimpleFoam/Make/options
+@@ -18,6 +18,7 @@ EXE_LIBS = \
+     -lmomentumTransportModels \
+     -lcompressibleMomentumTransportModels \
+     -lthermophysicalTransportModels \
++    -lsolidThermo \
+     -lfiniteVolume \
+     -ldynamicFvMesh \
+     -ltopoChangerFvMesh \

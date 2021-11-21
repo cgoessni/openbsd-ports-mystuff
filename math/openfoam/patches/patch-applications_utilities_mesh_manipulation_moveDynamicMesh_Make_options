@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: applications/utilities/mesh/manipulation/moveDynamicMesh/Make/options
+--- applications/utilities/mesh/manipulation/moveDynamicMesh/Make/options.orig
++++ applications/utilities/mesh/manipulation/moveDynamicMesh/Make/options
+@@ -7,6 +7,7 @@ EXE_INC = \
+     -I../checkMesh
+ 
+ EXE_LIBS = \
++    -lfiniteVolume \
+     -ldynamicFvMesh \
+     -lmeshTools \
+     -lsampling \

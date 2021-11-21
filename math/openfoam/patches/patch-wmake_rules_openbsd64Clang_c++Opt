@@ -1,0 +1,8 @@
+$OpenBSD$
+
+Index: wmake/rules/openbsd64Clang/c++Opt
+--- wmake/rules/openbsd64Clang/c++Opt.orig
++++ wmake/rules/openbsd64Clang/c++Opt
+@@ -0,0 +1,2 @@
++c++DBUG     =
++c++OPT      = -O3
