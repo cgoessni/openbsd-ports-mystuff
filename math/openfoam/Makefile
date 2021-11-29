@@ -6,6 +6,7 @@ V =			9
 EXTRACT_SUFFIX =	.tar.gz
 DISTFILES =		version-${V}${EXTRACT_SUFFIX}
 DISTNAME =		OpenFOAM-${V}
+PKGNAME =		openfoam-${V}
 
 #GH_ACCOUNT =		OpenFOAM
 #GH_PROJECT =		OpenFOAM-${V}
@@ -30,7 +31,6 @@ LIB_DEPENDS =		math/metis \
 
 USE_GMAKE =		Yes
 
-
 #CONFIGURE_STYLE =	simple
 #CONFIGURE_SCRIPT =	/usr/local/bin/gmake
 #CONFIGURE_ARGS +=	config cc=${CC} shared=1 prefix=${LOCALBASE}
@@ -39,12 +39,12 @@ USE_GMAKE =		Yes
 PATCHORIG =		.patch.orig
 
 post-extract:
-	#mv ${WRKDIR}/OpenFOAM-${V}-version-${V} ${WRKDIR}/${DISTNAME}
-	#find ${WRKSRC} -type f -exec sed -i 's:/bin/bash:/usr/bin/env bash:g' {} +
+	mv ${WRKDIR}/OpenFOAM-${V}-version-${V} ${WRKDIR}/${DISTNAME}
+	find ${WRKSRC} -type f -exec sed -i 's:/bin/bash:/usr/bin/env bash:g' {} +
 	mkdir ${WRKSRC}/wmake/rules/openbsd64
 	mkdir ${WRKSRC}/wmake/rules/openbsd64Clang
 
 do-build:
-	/bin/sh -c ". ${WRKSRC}/etc/bashrc && ${WRKSRC}/Allwmake"
+	/bin/sh -c ". ${WRKSRC}/etc/bashrc; ${WRKSRC}/Allwmake"
 
 .include <bsd.port.mk>
