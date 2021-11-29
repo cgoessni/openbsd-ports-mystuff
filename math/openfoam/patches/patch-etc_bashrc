@@ -12,7 +12,7 @@ Index: etc/bashrc
  # export FOAM_INST_DIR=~$WM_PROJECT
  # export FOAM_INST_DIR=/opt/$WM_PROJECT
 -# export FOAM_INST_DIR=/usr/local/$WM_PROJECT
-+export FOAM_INST_DIR=/usr/ports/pobj/OpenFOAM-9
++export FOAM_INST_DIR=/usr/ports/pobj/openfoam-9
  #
  # END OF (NORMAL) USER EDITABLE PART
  ################################################################################
